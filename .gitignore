@@ -15,4 +15,5 @@ demo/slides/
 demo/.manim-slides.json
 
 slides
+slides_output
 index*

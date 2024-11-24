@@ -2,8 +2,7 @@ from manim import *  # or: from manimlib import *
 
 from manim_slides import Slide
 
-
-class BasicExample(Slide):
+class OptimizationFinal(Slide):
     def construct(self):
         circle = Circle(radius=3, color=BLUE)
         dot = Dot()
