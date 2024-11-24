@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -32,7 +36,7 @@ jobs:
     - name: Install python dependencies
       run: |
         conda install -c conda-forge -y manim
-        sudo pip install meson
+        sudo pip install meson ninja
         pip install -U "manim-slides[pyside6-full]"
 
     # Step 4: Generate Manim-Slides HTML
