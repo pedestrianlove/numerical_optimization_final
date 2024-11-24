@@ -13,3 +13,6 @@ slides/Slides.slides.html
 demo/slides/
 
 demo/.manim-slides.json
+
+slides
+index*
