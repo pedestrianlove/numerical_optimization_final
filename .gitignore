@@ -1,0 +1,15 @@
+.vscode/launch.json
+.vscode/settings.json
+
+### Python
+__pycache__/
+
+media/
+
+slides/.ipynb_checkpoints/
+
+slides/Slides.slides.html
+
+demo/slides/
+
+demo/.manim-slides.json
