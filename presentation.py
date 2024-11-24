@@ -2,16 +2,14 @@ from manim import *  # or: from manimlib import *
 
 from manim_slides import Slide
 
+# import slide pages
+import slide_folder.title_page as title_page
+import slide_folder.misc_page as misc_page
+
 class OptimizationFinal(Slide):
     def construct(self):
-        circle = Circle(radius=3, color=BLUE)
-        dot = Dot()
 
-        self.play(GrowFromCenter(circle))
-        self.next_slide()  # Waits user to press continue to go to the next slide
+        title_page.title_page(self)
 
-        self.next_slide(loop=True)  # Start loop
-        self.play(MoveAlongPath(dot, circle), run_time=2, rate_func=linear)
-        self.next_slide()  # This will start a new non-looping slide
+        misc_page.misc_page(self)
 
-        self.play(dot.animate.move_to(ORIGIN))
