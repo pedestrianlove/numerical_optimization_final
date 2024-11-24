@@ -14,17 +14,20 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # Step 2: Set up Python environment
-    - name: Set up Python
-      uses: actions/setup-python@v5
+    - uses: conda-incubator/setup-miniconda@v3
       with:
+        channels: conda-forge
+        auto-update-conda: true
         python-version: 3.12.7
 
     # Step 3: Install dependencies
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        sudo apt-get update -y
+        sudo apt-get install -y build-essential python3-dev libcairo2-dev libpango1.0-dev ffmpeg
+        sudo apt-get install -y texlive texlive-latex-extra
+        conda install -c conda-forge manim
+        pipx install -U "manim-slides[pyside6-full]"
 
     # Step 4: Generate Manim-Slides HTML
     - name: Generate Manim-Slides HTML
