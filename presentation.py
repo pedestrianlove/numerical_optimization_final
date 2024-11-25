@@ -9,3 +9,4 @@ class OptimizationFinal(Slide):
     def construct(self):
         slides.title_page(self)
         slides.contraction_example(self)
+        slides.contraction_definition(self)
