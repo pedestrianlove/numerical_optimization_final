@@ -15,7 +15,7 @@ def contraction_example(self):
     self.next_slide()
 
     # Add a label to indicate contraction mapping
-    contraction_label = MathTex(r"f(x, y) = (\frac{1}{2}x, \frac{1}{2}y)")
+    contraction_label = MathTex(r"f(\vec{x}) = \frac{1}{2} \vec{x}")
     contraction_label.to_corner(UP + LEFT)
     self.play(Write(contraction_label))
 
