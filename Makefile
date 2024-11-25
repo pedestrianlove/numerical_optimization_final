@@ -4,3 +4,6 @@ build:
 		--to HTML							\
 		-ccontrols=true						\
 		slides_output/index.html
+
+dev:
+	@go run github.com/air-verse/air@latest

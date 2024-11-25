@@ -8,5 +8,4 @@ import slide_folder as slides
 class OptimizationFinal(Slide):
     def construct(self):
         slides.title_page(self)
-        slides.misc_page(self)
-        #test
+        slides.contraction_example(self)

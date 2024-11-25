@@ -2,7 +2,7 @@ root = "."
 
 [build]
   args_bin = []
-  bin = "/opt/homebrew/bin/npx serve slides_output"
+  bin = "/usr/bin/npx serve slides_output"
   cmd = "make"
   delay = 1000
   exclude_dir = ["materials", "media", "slides", "slides_output", "__pycache__"]
