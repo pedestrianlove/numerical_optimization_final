@@ -140,4 +140,5 @@ def contraction_proof(self):
     """, tex_template=definition_template, tex_environment="proof").scale(0.75).shift(DOWN)
     self.play(ReplacementTransform(ineq_3, proof))
     self.next_slide()
+    self.play(FadeOut(VGroup(contraction_theorem, proof)))
 
