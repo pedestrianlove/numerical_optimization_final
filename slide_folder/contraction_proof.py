@@ -84,7 +84,7 @@ def contraction_proof(self):
     """, tex_template=definition_template,tex_environment="definition").scale(0.75).to_edge(UP)
     # Contraction theorem
     contraction_theorem = Tex(r"""
-        If $X$ is a complete metric space, and if $\phi$ is a contraction of $X$ into X, then there exists one and only one $x\in X$ such that $\phi (x) = x$.
+        If $(X, d)$ is a complete metric space, and if $\phi$ is a contraction of $X$ into X, then there exists one and only one $x\in X$ such that $\phi (x) = x$.
     """, tex_template=definition_template, tex_environment="theorem").scale(0.75).to_edge(UP)
 
     # Convert distance_label into inequalities
@@ -124,7 +124,7 @@ def contraction_proof(self):
     self.next_slide()
     proof = Tex(r"""
     \raggedright
-    If $n < m$, it follows that
+    If $n < m$, and $0 \leq c < 1$ is the contraction factor for $\phi$, then it follows that
     \begin{equation*}
         \begin{split}
         d(x_n, x_m) &\leq   \sum_{i=n+1}^m d(x_{i-1}, x_i)    \\
