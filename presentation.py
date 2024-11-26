@@ -7,7 +7,11 @@ import slide_folder as slides
 
 class OptimizationFinal(Slide):
     def construct(self):
+
+        # Title
         slides.title_page(self)
+
+        # Contraction
         slides.contraction_example(self)
         slides.contraction_definition(self)
         slides.contraction_proof(self)

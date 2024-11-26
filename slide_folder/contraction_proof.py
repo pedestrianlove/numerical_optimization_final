@@ -19,10 +19,13 @@ def contraction_proof(self):
     dot_list.append(initial_dot)
     label_list.append(initial_label)
 
-    num_iterations = 5  # You can increase this for more points
+    num_iterations = 4  # You can increase this for more points
+    curve_radius = 3  # Adjust to change the curvature of the sequence
     for i in range(1, num_iterations + 1):
         # Define new point for each iteration
-        new_dot = Dot(dot_list[-1].get_center() + RIGHT * 2, color=BLUE)
+        angle = i * PI / 30  # Adjust the denominator to control spacing
+        new_dot_position = dot_list[-1].get_center() + curve_radius * RIGHT * np.cos(angle) - curve_radius * UP * np.sin(angle)
+        new_dot = Dot(new_dot_position, color=BLUE)
         var_label = MathTex(f"g(x_{i-1})").next_to(new_dot,UP)
 
         # Animate the movement from previous point to the new point
