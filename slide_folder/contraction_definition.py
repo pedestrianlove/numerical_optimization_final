@@ -26,3 +26,10 @@ def contraction_definition(self):
     self.play(Write(contraction_theorem))
     self.next_slide()
     self.play(FadeOut(contraction_theorem))
+
+    # Proof Intro
+    title = Text("Actually, the mechanism is pretty simple.")
+    self.play(FadeIn(title))
+    self.next_slide()
+    self.play(FadeOut(title))
+

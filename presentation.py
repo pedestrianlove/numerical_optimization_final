@@ -10,3 +10,4 @@ class OptimizationFinal(Slide):
         slides.title_page(self)
         slides.contraction_example(self)
         slides.contraction_definition(self)
+        slides.contraction_proof(self)
