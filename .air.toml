@@ -3,7 +3,7 @@ root = "."
 [build]
   args_bin = []
   bin = "/usr/bin/npx serve slides_output"
-  cmd = "make"
+  cmd = "make fast-dev"
   delay = 1000
   exclude_dir = ["materials", "media", "slides", "slides_output", "__pycache__"]
   exclude_file = []
