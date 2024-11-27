@@ -15,3 +15,4 @@ class OptimizationFinal(Slide):
         slides.contraction_example(self)
         slides.contraction_definition(self)
         slides.contraction_proof(self)
+        slides.newton_method(self)
