@@ -48,7 +48,7 @@ def newton_method(self):
             |\phi'(c)| = |f(c)|\cdot |\frac{f''(c)}{f'(c)}| < \frac{1}{M} \cdot M = 1.
         \end{equation*}
         \par
-        Threefore, $\phi$ is a contraction.
+        Therefore, $\phi$ is a contraction.
     """).scale(0.75).next_to(newton_it, DOWN)
     self.play(Write(question))
     self.next_slide()
