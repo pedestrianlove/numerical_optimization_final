@@ -34,7 +34,7 @@ def high_dimension_newton_method(self):
     conclusion = Tex(r"""
         Since $\phi'$ is continuous near $\vec{x^*}$, by applying Extreme Value Theorem to each component of $\phi'$, we can find an open set $U\subset \mathbb{R}^n$ containing $\vec{x^*}$ such that
         \begin{equation*}
-            \| \phi'(\vec{x^*}) \| \leq 1
+            \| \phi'(\vec{x^*}) \| < 1
         \end{equation*}
 
         \par
