@@ -7,3 +7,4 @@ from .newton_method import *
 from .high_dimension_newton_method import *
 from .interlude import *
 from .mdp_intro import *
+from .mdp_proof import *

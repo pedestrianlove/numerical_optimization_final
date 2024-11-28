@@ -21,3 +21,4 @@ class OptimizationFinal(Slide):
         slides.interlude(self)
         # Advanced Applications
         slides.mdp_intro(self)
+        slides.mdp_proof(self)
