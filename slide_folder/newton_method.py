@@ -3,13 +3,13 @@ from manim import *
 def newton_method(self):
 
     # Question
-    text = Text("But why is fixed point theorem useful?")
+    text = Text("But why is fixed point theorem useful?").scale(0.75)
     self.play(FadeIn(text))
     self.next_slide()
     self.play(FadeOut(text))
 
     # Use Newton's Method as an example
-    newton_title = Text("Recall the Newton's method used to find root.").to_edge(UP)
+    newton_title = Text("Recall the Newton's method used to find root.").scale(0.75).to_edge(UP)
     self.play(Write(newton_title))
     self.next_slide()
 
