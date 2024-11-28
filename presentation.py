@@ -14,5 +14,9 @@ class OptimizationFinal(Slide):
         slides.contraction_example(self)
         slides.contraction_definition(self)
         slides.contraction_proof(self)
+        # Simelp Example
         slides.newton_method(self)
         slides.high_dimension_newton_method(self)
+        # Interlude
+        slides.interlude(self)
+        # Advanced Applications

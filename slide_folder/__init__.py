@@ -5,3 +5,4 @@ from .contraction_definition import *
 from .contraction_proof import *
 from .newton_method import *
 from .high_dimension_newton_method import *
+from .interlude import *
