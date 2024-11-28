@@ -3,7 +3,7 @@ from manim import *
 def newton_method(self):
 
     # Question
-    text = Text("But why is fixed point theorem useful?").scale(0.75)
+    text = Text("But why is Fixed Point Theorem useful?").scale(0.75)
     self.play(FadeIn(text))
     self.next_slide()
     self.play(FadeOut(text))
@@ -25,7 +25,6 @@ def newton_method(self):
             \State $k \gets k + 1$
         \ENDWHILE
     """, tex_template=algorithm_env, tex_environment="algorithmic").scale(0.75).to_edge(UP)
-    print(newton_algorithm.tex_strings)
     self.play(ReplacementTransform(newton_title, newton_algorithm))
     self.next_slide()
 
